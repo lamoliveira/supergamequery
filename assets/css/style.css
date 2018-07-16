@@ -11,7 +11,8 @@ body{
 }
 h3{font-size: 14px;
 text-align: left;
-background-color: aquamarine;
+background-color: gray;
+color: white;
 height: 25px;
 }
 th{
@@ -26,11 +27,17 @@ body {
 
 .jumbotron{
  
-  background-color: aquamarine;
+  background-color: gray;
+  color: white;
   height: 160px;
 }
 .table{
 border: 1px solid aquamarine;
+}
+
+.imgselected{
+  width: 200%;
+  border: 1px solid aquamarine;
 }
 
 #table-train{

@@ -3,12 +3,16 @@ function showSelected(snapshot) {
     // Log everything that's coming out of snapshot
     console.log(snapshot);
     console.log("length:"+snapshot.length);
-   
+    var gametitle = $("#gametitle");
+    console.log("name: "+snapshot[0].name);
+    gametitle.html(snapshot[0].name);
+
     var divimage = $("#images");
 
     
     var cover = $("<img>");
-    cover.addClass("img-responsive cover_big");
+    cover.addClass("img-responsive cover_big imgselected");
+    cover.css("width:300px");
     if (snapshot[0].cover) {
     cover.attr("src", "http://" +   snapshot[0].cover.url);
     }

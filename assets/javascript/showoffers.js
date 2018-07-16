@@ -7,14 +7,14 @@ function showOffers(snapshot) {
   var vg = $("#prices");
   var newrow = $("<tr>");
   vg.append(newrow);
-  vg.append("<td><strong>Game</strong></td><td><strong>Price</strong></td>");
+  vg.append("<td><strong>Condition</strong></td><td><strong>Include</strong></td><td><strong>Price</strong></td>");
   for (i = 0; i < snapshot.offers.length; i++) {
     // Create a new variable that will hold a "<th>" tag.
     
     
     var newrow = $("<tr>");
     
-    newrow.append( "<td>" + snapshot.offers[i]["product-name"] + "</td>" + "<td>" + parseInt(snapshot.offers[i]["price"])/100 + "</td>"   );
+    newrow.append( "<td>" + snapshot.offers[i]["condition-string"] + "</td>" +"<td>" + snapshot.offers[i]["include-string"] + "</td>" + "<td>" + parseInt(snapshot.offers[i]["price"])/100 + "</td>"   );
    // if (!snapshot.offers[i].price) {
    // newrow.append("<td>"  + snapshot.offers[i].price + "</td>");
    // }
